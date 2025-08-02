@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <!-- строка поиска -->
+         <div class="search-container">
+            <input type="text" id="searchInput" class="search-input">
+            <img src="/public/images/search.png" alt="Поиск" >
+        </div>
+
+        <!-- карточки пользователей -->
+        <div id="usersList" class="users-list">
+            <span></span>
+        </div>
+
+        <!-- pop-up окно с детальной информацией -->
+         <div id="userPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2 id="popupName"></h2> <br/>
+
+                <table>
+                    <tr>
+                        <td>Телефон:</td>
+                        <td id="popupPhone"></td>
+                    </tr>
+                    <tr>
+                        <td>Почта:</td>
+                        <td id="popupEmail"></td>
+                    </tr>
+                    <tr>
+                        <td>Дата приема:</td>
+                        <td id="popupDate"></td>
+                    </tr>
+                    <tr>
+                        <td>Должность:</td>
+                        <td id="popupPosition"></td>
+                    </tr>
+                    <tr>
+                        <td>Подразделение:</td>
+                        <td id="popupDepartment"></td>
+                    </tr>
+                </table>
+
+                <br/>
+                <p><strong class="info-label">Дополнительная информация:</strong> <br/> <span id="popupInfo" class="info-text">Разработчики используют текст в качестве заполнителя макта страницы. Разработчики используют текст в качестве заполнителя макта страницы.</span></p>
+            </div>
+         </div>
+
+    </div>
+
+    <script src="/public/script.js" type="module"></script>
+</body>
+</html>
